@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+}
+
+.header-hero-section {
+    background: #001BB7;
+}
+
+/* All this styling the header/nav section and the hero text */
+img {
+    height: 150px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #a7a7a7;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-in-btn {
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    background-color: white;
+    color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sign-in-btn:hover {
+    background: #007BFF;
+    color: white;
+    transition: 0.3s;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.hero-text .get-started-btn {
+    margin-top: 1.3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+
+#features-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+
+#features-container {
+    height: max-content;
+    width: 350px;
+}
+
+.feature-box{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.feature-icon{
+    height: fit-content;
+    filter: invert(100%) brightness(200%) contrast(200%);
+}
+
+.feature-img {
+    width: max-content;
+    height: fit-content;
+    background: #007BFF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#features-container div h3 {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+#features-container p {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #features-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
